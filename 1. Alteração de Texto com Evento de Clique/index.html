@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 - Alterar texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button onclick="MudarTexto()" id="botao">Alterar texto!</button>
+<h1 id="texto">Eu sou Paul Muad'Dib Atreides</h1>
+
+
+<script>
+
+function MudarTexto(){
+    var paul = document.getElementById("texto");
+
+    if (paul.textContent === "Eu sou Paul Muad'Dib Atreides"){
+        paul.textContent = "Duque de Arrakis";
+        
+    } else{
+        paul.textContent = "Eu sou Paul Muad'Dib Atreides"
+    }
+
+}
+
+
+</script>
+
+
+</body>
+</html>

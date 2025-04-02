@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 - Alterar imagem</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+
+<img src="https://i.redd.it/uzu3tigk0jbb1.jpg" id="imagem1" alt="imagemOriginal"
+onmouseover="RemoverImagem()"
+onmouseout="RestaurarImagem()">
+
+
+
+<script>
+
+function RemoverImagem(){
+    document.getElementById("imagem1").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeAimMlNJJ8ddnV3WA2mTQ66XKR7ROVMlXaQ&s";
+}
+
+function RestaurarImagem(){
+    document.getElementById("imagem1").src = "https://i.redd.it/uzu3tigk0jbb1.jpg";
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

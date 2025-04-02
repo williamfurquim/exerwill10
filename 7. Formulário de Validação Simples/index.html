@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 - Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="formulario">
+        <label for="campoTexto">Digite o seu nome completo</label>
+        <input type="text" id="texto">
+        <button type="submit" id="botao">Enviar formulário</button>
+        <p id="erro" style="color: red; display: none;">O campo não pode estar vazio</p>
+    </form>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event){
+            let texto = document.getElementById("texto").value.trim();
+            let erro = document.getElementById("erro");
+
+            if(texto === ""){
+                event.preventDefault();
+                erro.style.display = "block";
+            } else {
+                erro.style.display = "none";
+            }
+
+        }
+    )
+
+
+
+    </script>
+    
+</body>
+</html>

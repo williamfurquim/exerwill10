@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    gap: 150px;
+    background-image: url(https://www.sideshow.com/cdn-cgi/image/height=850,quality=90,f=auto/https://www.sideshow.com/storage/product-images/913995/prime-1-studio-dune-paul-atreides-1-3-scale-statue-gallery-674f410e4ead4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255);
+}
+
+img{
+    width: auto;
+    height: 500px;
+}
+
+button {
+    padding: 15px 10px;
+    cursor: pointer;
+}

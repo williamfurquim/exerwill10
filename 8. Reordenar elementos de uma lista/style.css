@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 150px;
+}
+
+ul {
+    list-style: none;
+    font-size: 3.0em;
+}
+
+button {
+    padding: 25px 60px;
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 - Alterar fundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="fundo" style="color: blue;">
+<button onclick="MudarCor()" id="botao">Clique para alterar a cor!</button>
+</div>
+
+<script>
+
+function MudarCor(){ //Função é pra ser chamada quando necessária
+
+    let fundo = document.getElementById("fundo");
+    let corAtual = fundo.style.backgroundColor;
+
+    if (corAtual === "blue"){
+        fundo.style.backgroundColor = "black";
+    } else {
+        fundo.style.backgroundColor = "blue";
+    }
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

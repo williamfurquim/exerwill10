@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 - Reordenar lista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<ul id="lista">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+
+
+<button id="botao">Reordenar</button>
+
+<script>
+    
+    document.getElementById("botao").addEventListener("click", function() {
+        let lista = document.getElementById("lista");
+        let itens = Array.from(lista.getElementsByTagName("li"));
+
+        
+        itens.sort(() => Math.random() - 0.5);
+
+        
+        lista.innerHTML = "";
+        itens.forEach(item => lista.appendChild(item)); 
+    });
+</script>
+
+</body>
+</html>
